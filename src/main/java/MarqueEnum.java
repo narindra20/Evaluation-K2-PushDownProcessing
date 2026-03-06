@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class MarqueEnum {
+public enum MarqueEnum {
+    KIA,
+    HYUNDAI,
+    DAEWOO
 }

@@ -1,4 +1,18 @@
-package PACKAGE_NAME;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnection {
+
+    public Connection getConnection() {
+        try {
+            String jdbcURl = System.getenv("JDBC_URl");
+            String user = System.getenv("USER");
+            String password = System.getenv("PASSWORD");
+            return DriverManager.getConnection("jdbc:postgresql://localhost:5432/garagecoreen_db", "postgres", "postgres");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

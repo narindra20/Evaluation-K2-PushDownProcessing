@@ -1,8 +1,8 @@
-public class PieceVendus {
+public class PieceVendusMarque {
     private MarqueEnum marqueEnum;
     private int nbr_pieces_vendus;
 
-    public PieceVendus(MarqueEnum marqueEnum, int nbr_pieces_vendus){
+    public PieceVendusMarque(MarqueEnum marqueEnum, int nbr_pieces_vendus){
         this.marqueEnum = marqueEnum;
         this.nbr_pieces_vendus = nbr_pieces_vendus;
     }

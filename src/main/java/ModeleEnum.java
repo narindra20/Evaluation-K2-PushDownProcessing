@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
-public class ModeleEnum {
+public enum ModeleEnum {
+    GETZ,
+    PRIDE,
+    LACETTI
 }
